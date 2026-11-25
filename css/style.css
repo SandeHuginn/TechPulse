@@ -1,0 +1,212 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+#cabecalho {
+    background-color: #14213d;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+#cabecalho h1 {
+    font-size: 32px;
+    margin: 0 0 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00b4d8;
+}
+
+/* ========================================
+   CONTEÚDO PRINCIPAL
+======================================== */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+section h2 {
+    color: #14213d;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+section h3 {
+    color: #0077b6;
+}
+
+section p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* ========================================
+   IMAGEM DA APRESENTAÇÃO
+======================================== */
+
+#inicio img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 10px;
+    border: 3px solid #e0e0e0;
+}
+
+/* ========================================
+   LISTA DE TECNOLOGIAS
+======================================== */
+
+#tecnologias ul {
+    padding-left: 25px;
+}
+
+#tecnologias li {
+    margin-bottom: 15px;
+}
+
+/* ========================================
+   NOTÍCIAS
+======================================== */
+
+#noticias article {
+    background-color: #f4f6f8;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #0077b6;
+    border-radius: 5px;
+}
+
+#noticias article h3 {
+    margin-top: 0;
+}
+
+/* ========================================
+   BOTÃO DE NAVEGAÇÃO
+======================================== */
+
+#inicio a {
+    display: inline-block;
+    background-color: #0077b6;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#inicio a:hover {
+    background-color: #023e8a;
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    background-color: #14213d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 600px) {
+
+    #cabecalho h1 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section p {
+        text-align: left;
+    }
+
+    #inicio img {
+        width: 100%;
+    }
+}
+
+.botao {
+    display: inline-block;
+    font-weight: bold;
+}
+
+#inicio .botao {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
